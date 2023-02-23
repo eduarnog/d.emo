@@ -1,0 +1,86 @@
+/* typography */
+/* display */
+.display-large {
+    font-size: 57px;
+    line-height: 64px;
+    margin: 0px;
+    margin-bottom: 16px;
+    }
+    
+.display-medium {
+    font-size: 45px;
+    line-height: 52px;
+    margin: 0px
+}
+.display-small {
+    font-size: 36px;
+    line-height: 46px;
+}
+
+/* headline */
+.headline-large {
+    font-size: 32px;
+    line-height: 40px;
+}
+.headline-medium {
+    font-size: 28px;
+    line-height: 36px;
+}
+.headline-small{
+    font-size: 24px;
+    line-height: 32px;
+}
+
+/* title */
+.title-large {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 4px;
+}
+.title-medium {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+.title-small{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+
+/* label */
+.label-large{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.75;
+    margin-bottom: 4px;
+    color: var(--md-sys-color-on-primary-container);
+}
+.label-medium {
+    font-size: 12px;
+    line-height: 16px;
+    flex-grow: 1;
+    margin-bottom: 4px;
+}
+.label-small {
+    font-size: 11px;
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+
+/* body */
+.body-large{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: +0.5;
+}
+.body-medium{
+    font-size: 14px;
+    line-height: 52px;
+    margin: 0px;
+}
+.body-small{
+    font-size: 12px;
+    line-height: 52px;
+    margin: 0px;
+}
