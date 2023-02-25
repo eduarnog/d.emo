@@ -1,4 +1,4 @@
-# d.emo - 
+# d.emo
 This project aims to develop a tool for documenting 
 and applying visual identities with the help of 
 generative design. I've been working on this project 
