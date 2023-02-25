@@ -3,14 +3,12 @@
 .display-large {
     font-size: 57px;
     line-height: 64px;
-    margin: 0px;
-    margin-bottom: 16px;
+    margin-block: 0;
     }
     
 .display-medium {
     font-size: 45px;
     line-height: 52px;
-    margin: 0px
 }
 .display-small {
     font-size: 36px;
