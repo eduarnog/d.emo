@@ -20,3 +20,5 @@ test some ideas for designing this product. For sure, there
 are many good practices that I still need to learn regarding 
 front-end development, so let me know how I can optimize this 
 code.
+
+Enabled flow: home page > login > dashboard
