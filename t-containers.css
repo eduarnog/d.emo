@@ -28,18 +28,37 @@
     color: var(--md-sys-color-primary-container);
     background-color: var(--md-sys-color-on-surface);;
     border-radius: 24px;
+    border: 2px solid;
+    border-color: var(--md-sys-color-on-surface);
     font-size: 16px;
     line-height: 16px;
-    letter-spacing: +0.5;
+    letter-spacing: +1;
     text-decoration: none;
-    border-color: transparent;
-    stroke-width: 0;
     text-align: center; 
 }
 .button-primary:hover {
     color: var(--md-sys-color-background);
     background-color: var(--md-sys-color-primary);
+    border-color: var(--md-sys-color-primary);
 }
+
+.button-secondary{
+    padding: 12px 40px;
+    color: var(--md-sys-color-on-surface-variant);
+    border-radius: 24px;
+    border: 2px solid;
+    border-color: var( --md-sys-color-outline-md-sys-color);
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: +0.5;
+    text-decoration: none;
+    text-align: center; 
+}
+.button-secondary:hover{
+    color: var(--md-sys-color-on-surface-variant);
+    border-color: var( --md-sys-color-primary);
+}
+
 .button-text {
     padding: 12px 32px;
     color: var(--md-sys-color-on-surface-variant);
@@ -52,36 +71,55 @@
     text-align: center;
 }
 .button-text:hover {
-    color: var(--md-ref-palette-primary35); 
+    color: var(--md-sys-color-primary); 
 }
 
 .avatar-icon{
-    width: 36px;
-    height: 36px;
+    width: 24px;
+    height: 24px;
     background-image: url("https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80");
     background-position: center;
     background-size: cover;
     border-radius: 50%;
+    border: 2px solid;
+    border-color: transparent ;
+}
+
+.avatar-icon:hover{
+    border: 2px solid;
+    border-color: var(--md-sys-color-primary) ;
 }
 
 /* Containers - navigation */
 .navbar-wrap {
-    height: auto;
+    height: 60px;
     width: auto;
     background-color: var(--md-sys-color-background);
-    padding: 8px 24px;
+    padding: 0px 24px;
     z-index: 2;
     position: fixed;
     left: 0%;
-    bottom: auto;
     right: 0% ;
     top: 0%;
     display: flex;
-    margin-right: 0;
-    margin-left: 0;
     align-items: center;
     justify-content: space-between;
 }
+
+.logo-wrap{
+    height: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-flow: row wrap;
+    column-gap: 16px;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.menu-button{
+    display: none;
+}
+
 .nav-logo-link {
     font-size: 24px;
     margin-bottom: 0px;
@@ -112,15 +150,25 @@
     padding: 8px 24px;
     z-index: 2;
     position: fixed;
-    left: auto;
     bottom: 0%;
-    right: auto ;
-    top: auto;
     display: flex;
     flex:content;
+    flex-direction: row;
     align-items: start;
     background: var(--md-ref-palette-neutral10);
     color: var(--md-ref-palette-neutral80);
+}
+
+.project-tab{
+    height: auto;
+    flex-grow: 1;
+    font-size: 16px;
+    color: var(--md-sys-color-secondary-light);
+    text-decoration: none;
+    padding: 14px 16px;
+    border-left: 1px solid;
+    border-color: var(--md-sys-color-secondary-light);
+    
 }
 
 /* Containers content*/
@@ -154,7 +202,6 @@
     max-width: 660px;
     padding: 0vw 5vw;
     display: flex;
-    flex-grow: inherit;
     flex-direction: column;
     justify-content: center;
     row-gap: 16px;
@@ -212,13 +259,13 @@
     
 /* forms */
 .login-form {
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     column-count: 1;
 }
 .input-primary-light {
-    width: 100%;
+    width: auto;
     font-size: 16px;
     padding: 12px;
     margin-bottom: 16px;
@@ -245,15 +292,15 @@
 
     .container-medium-v {
         width: auto;
+        height: 100vh;
         max-width: none;
     }
     .container-small-v {
         width: auto;
         padding: 7vw;
-        height: 100%;
+        height: 100vh;
         max-width: none;
     }
-    
     .project-section{
         height: auto;
         padding-top: 4rem;
@@ -270,6 +317,22 @@
     .nav-link {
         display: none;
     }
+    .menu-button{
+        display: block;
+    }
+
+    .footer-sign {
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 16px;
+        position: static;
+        padding: 8px 24px;
+     }
+     .display-large {
+        font-size: 48px;
+    }
 
 } 
 
@@ -280,5 +343,7 @@
         grid-template-columns: 1fr;
         row-gap: 24px;
     }
+    
+
 }
 
